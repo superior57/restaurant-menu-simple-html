@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
+        <link id="gull-theme" rel="stylesheet" href="assets/styles/css/themes/lite-purple.min.css">
+        <link id="gull-theme" rel="stylesheet" href="assets/styles/css/style.css">
+
+
+    </head>
+
+    <body class="text-left ">
+        <!-- Pre Loader Strat  -->
+        <!-- <div class='loadscreen' id="preloader">
+
+            <div class="loader spinner-bubble spinner-bubble-primary">
+
+
+
+            </div>
+        </div> -->
+        <!-- Pre Loader end  -->
+
+        <div class="main-wrapper">
+            <div class="container">                
+                <div class="menu-name-wrapper form-group p-5">
+                    <input type="text" class="form-control text-center" placeholder="Menu Name" value="Test Menu name" disabled>
+                </div>
+
+                <div class="categories-wrapper form-group p-5">
+                    <h4>Categories</h4>
+                    <div class="categories">
+                        <div class="category mb-3 justify-content-around">
+                            <h5 > Category Name</h5>
+                            <a href="new-category-2.html" class="btn btn-secondary text-white"> Edit</a>
+                            <div class="item-handle-position">
+                                <span class="i-Arrow-Up" onclick="moveUp(this)"></span>
+                                <span class="i-Arrow-Down" onclick="moveDown(this)"></span>
+                            </div>
+                        </div>
+                        <div class="category mb-3 justify-content-around">
+                            <h5 > Category Name 1</h5>
+                            <a href="new-category-2.html" class="btn btn-secondary text-white"> Edit</a>
+                            <div class="item-handle-position">
+                                <span class="i-Arrow-Up" onclick="moveUp(this)"></span>
+                                <span class="i-Arrow-Down" onclick="moveDown(this)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="new-category.html" class="btn btn-secondary float-right mb-3 text-white w-100" value="Save" >Add New Category</a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <script>
+            function moveUp(element) {
+                var cur_item = $(element).parent().parent();
+                var prev_item = cur_item.prev();
+                prev_item.before(cur_item);
+            }
+            function moveDown(element) {
+                var cur_item = $(element).parent().parent();
+                var next_item = cur_item.next();
+                next_item.after(cur_item);
+            }
+        </script>
+    </body>
+
+</html>

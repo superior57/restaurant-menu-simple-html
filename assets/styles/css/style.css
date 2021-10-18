@@ -1,0 +1,48 @@
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.no-created-menu {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.no-created-menu h3 {
+    max-width: 400px;
+    text-align: center;
+}
+.no-created-menu h3 a{
+    color: #332e38;
+}
+
+.category-wrapper .category-item {
+    display: flex;
+}
+.category-wrapper .category-item * {
+    margin: 5px;
+}
+
+.categories-wrapper .categories .category {
+    display: flex;
+    border: solid 1px;
+    padding: 3px;
+}
+
+.categories-wrapper .categories .category h5 {
+    padding-top: 5px;
+    width: 60%;
+    text-align: center;
+}
+.item-handle-position {
+    width: 50px;
+    padding: 0 10px;
+}
+.item-handle-position span {
+    cursor: pointer;
+}
+.item-handle-position span:hover {
+    cursor: pointer;
+    color: #000;
+}
